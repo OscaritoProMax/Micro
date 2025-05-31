@@ -1,0 +1,78 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y tipografía */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #dff2ff, #b9d6f2);
+  color: #1d3557;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Contenedor principal */
+.container {
+  background-color: #ffffff;
+  max-width: 500px;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+  color: #1d3557;
+}
+
+/* Subtítulo */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #457b9d;
+}
+
+/* Lista de enlaces */
+.menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-links li {
+  margin: 0.8rem 0;
+}
+
+.menu-links a {
+  display: inline-block;
+  background-color: #457b9d;
+  color: white;
+  text-decoration: none;
+  padding: 0.9rem 1.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-links a:hover {
+  background-color: #1d3557;
+  transform: scale(1.03);
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

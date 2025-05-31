@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar Devolución</title>
+  <link rel="stylesheet" href="cssregistros.css">
+  <link rel="stylesheet" href="cssdevolucion.css">
+</head>
+<body>
+    <header class="main-header">
+  <div class="header-container">
+    <h1 class="logo">Rent a Car</h1>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="registrar_vehiculo.html">Registrar Vehículo</a></li>
+        <li><a href="registrar_cliente.html">Registrar Cliente</a></li>
+        <li><a href="crear_reserva.html">Realizar Reserva</a></li>
+        <li><a href="registrar_devolucion.html">Registrar Devolución</a></li>
+        <li><a href="consultar_historial.html">Consultar Historial</a></li>
+        <li><a href="vehiculos_disponibles.html">Ver Vehículos Disponibles</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <div class="main-container">
+    <h1 class="form-title">Registrar Devolución</h1>
+        <form id="formDevolucion" class="devolucion-form">
+        <!-- Buscar cliente -->
+        <label for="busqueda_cliente">Buscar cliente:</label>
+        <input type="text" id="busqueda_cliente" placeholder="Nombre del cliente" autocomplete="off" required>
+        <ul id="lista_clientes" class="sugerencias"></ul>
+        <input type="hidden" name="cliente_id" id="cliente_id_seleccionado">
+
+        <!-- Mostrar reservas activas del cliente -->
+        <label for="reserva_id">Selecciona la reserva activa:</label>
+        <select name="reserva_id" id="reserva_id" required></select><br><br>
+
+        <label for="fecha_devolucion">Fecha de devolución:</label><br>
+        <input type="date" name="fecha_devolucion" required><br><br>
+
+        <label>Estado del vehículo al devolver:</label>
+        <div class="radio-group">
+        <label for="estado_disponible">
+            <input type="radio" id="estado_disponible" name="estado_vehiculo" value="disponible" required>
+            Disponible
+        </label>
+
+        <label for="estado_mantenimiento">
+            <input type="radio" id="estado_mantenimiento" name="estado_vehiculo" value="mantenimiento">
+            Mantenimiento
+        </label>
+        </div>
+
+
+        <textarea name="observaciones" placeholder="Observaciones (opcional)"></textarea><br><br>
+
+        <button type="submit">Guardar Devolución</button>
+        </form>
+    <div class="btn-footer">
+      <a href="index.html" class="form-link">← Volver al menú</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

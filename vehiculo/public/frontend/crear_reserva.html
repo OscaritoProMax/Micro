@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Reserva</title>
+  <link rel="stylesheet" href="reservas.css">
+  <link rel="stylesheet" href="header.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-container">
+      <h1 class="logo">Rent a Car</h1>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="registrar_vehiculo.html">Registrar Vehículo</a></li>
+          <li><a href="registrar_cliente.html">Registrar Cliente</a></li>
+          <li><a href="crear_reserva.html">Realizar Reserva</a></li>
+          <li><a href="registrar_devolucion.html">Registrar Devolución</a></li>
+          <li><a href="consultar_historial.html">Consultar Historial</a></li>
+          <li><a href="vehiculos_disponibles.html">Ver Vehículos Disponibles</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Crear Reserva</h1>
+    <form id="formReserva">
+            <!-- Búsqueda de cliente -->
+        <label for="busqueda_cliente">Buscar cliente:</label>
+        <input type="text" id="busqueda_cliente" placeholder="Nombre del cliente" autocomplete="off" required>
+        <ul id="lista_clientes" class="sugerencias"></ul>
+        <input type="hidden" name="cliente_id" id="cliente_id_seleccionado">
+
+        <!-- Búsqueda de vehículo -->
+        <label for="busqueda_vehiculo">Buscar vehículo:</label>
+        <input type="text" id="busqueda_vehiculo" placeholder="Marca o modelo" autocomplete="off" required>
+        <ul id="lista_vehiculos" class="sugerencias"></ul>
+        <input type="hidden" name="vehiculo_id" id="vehiculo_id_seleccionado">
+
+
+      <label for="fecha_inicio">Fecha inicio:</label>
+      <input type="date" name="fecha_inicio" required>
+
+      <label for="fecha_fin">Fecha fin:</label>
+      <input type="date" name="fecha_fin" required>
+
+      <button type="submit">Reservar Vehículo</button>
+    </form>
+
+    <a href="index.html" class="menu-links">← Volver al menú</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

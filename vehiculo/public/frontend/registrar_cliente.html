@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar Cliente</title>
+  <link rel="stylesheet" href="cssclientes.css">
+  <link rel="stylesheet" href="header.css">
+</head>
+<body>
+     <header class="main-header">
+  <div class="header-container">
+    <h1 class="logo">Rent a Car</h1>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="registrar_vehiculo.html">Registrar Vehículo</a></li>
+        <li><a href="registrar_cliente.html">Registrar Cliente</a></li>
+        <li><a href="crear_reserva.html">Realizar Reserva</a></li>
+        <li><a href="registrar_devolucion.html">Registrar Devolución</a></li>
+        <li><a href="consultar_historial.html">Consultar Historial</a></li>
+        <li><a href="vehiculos_disponibles.html">Ver Vehículos Disponibles</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <div class="container">
+    <h1>Registrar Cliente</h1>
+    <form id="formCliente">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="text" name="telefono" placeholder="Teléfono">
+      <input type="email" name="correo" placeholder="Correo electrónico">
+      <input type="text" name="numero_licencia" placeholder="Número de licencia" required>
+      <button type="submit">Guardar Cliente</button>
+    </form>
+    <a href="index.html" class="menu-links">← Volver al menú</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+/* Estilo general del header */
+.main-header {
+    background-color: rgba(90, 42, 130, 0.95); /* violeta semitransparente */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+}
+
+/* Contenedor interno del header */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo o título */
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Navegación */
+.main-nav {
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+}
+
+/* Enlaces de navegación */
+.nav-links li {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 12px 10px;
+    min-width: 140px;
+}
+
+.nav-links li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover */
+.nav-links li a:hover {
+    background-color: #d1bdf0;
+    color: #5a2a82;
+    border-radius: 6px;
+}
+
+/* Nueva sección superior con logos y título */
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+.brand-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* si quieres que el logo sea blanco */
+}
+
+.logo-title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+/* Ya existente para navegación */
+.main-nav {
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+}
+
+.nav-links li {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 12px 10px;
+    min-width: 140px;
+}
+
+.nav-links li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #d1bdf0;
+    color: #5a2a82;
+    border-radius: 6px;
+}
+

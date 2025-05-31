@@ -1,0 +1,99 @@
+/* Fondo con imagen */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://siempreauto.com/wp-content/uploads/sites/9/2024/05/shutterstock_2088080557.jpg?w=1200') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Contenedor principal sobre fondo */
+.main-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* Estilo de lista */
+.vehiculo-listado {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Tarjeta de vehículo */
+.vehiculo-listado li {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.vehiculo-listado li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.vehiculo-listado li strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.vehiculo-listado li span {
+  display: block;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Enlace de volver */
+.form-link {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-link:hover {
+  color: #1abc9c;
+  text-decoration: underline;
+}
+
+/* Subtítulo de sección */
+.subtitulo {
+  font-size: 1.3rem;
+  color: #5a2a82;
+  margin: 2rem 0 1rem 0;
+}
+
+/* Botón para marcar como disponible */
+.btn-disponible {
+  padding: 10px 15px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-disponible:hover {
+  background-color: #219150;
+}

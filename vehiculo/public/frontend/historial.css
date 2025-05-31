@@ -1,0 +1,116 @@
+/* Fondo general con imagen */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2025/s2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal centrado y con fondo semitransparente */
+.main-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Título del formulario */
+.form-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Inputs y campos */
+.devolucion-form input[type="text"],
+.devolucion-form input[type="date"],
+.devolucion-form input[type="number"],
+.devolucion-form select,
+.devolucion-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+/* Botón */
+.form-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Enlace volver */
+.form-link {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-link:hover {
+  color: #007bff;
+}
+
+/* Lista de sugerencias */
+.sugerencias {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: -10px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+.sugerencias li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.sugerencias li:hover {
+  background-color: #eee;
+}
+
+/* Resultado de historial */
+.resultado-historial .reserva {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.resultado-historial .reserva p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.resultado-historial .reserva strong {
+  color: #2c3e50;
+}
